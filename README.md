@@ -12,3 +12,14 @@ It is a sample code for
 3) resizing to make an image fit into simple viewers (e.g. Windows default viewer, Fiji, etc.)
 
 Please note that this code is not providing svs loading part because there are several well-known open source library for this. (e.g. openslide, pyvips, etc.)
+
+***
+
+### "submission_compress.py" has been released for avoiding logistic issues in Grand-challenge platform
+##### (If you don't compress each tif, the submission system may fail to score your results.)
+
+It is another extremely simple code for
+1) loading a mask
+2) saving after applying ADOBE_DEFLATE level 9 compression with the same filename (may overwrite)
+3) the output will have around ten times smaller file size compared to the original uncompressed tif
+
